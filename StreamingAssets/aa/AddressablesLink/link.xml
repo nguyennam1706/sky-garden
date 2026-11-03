@@ -1,0 +1,92 @@
+<linker>
+  <assembly fullname="Game.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Game.UI.DevTools.DevToolsPopup" preserve="all" />
+    <type fullname="Game.UI.Feedback.FeedbackLayer" preserve="all" />
+    <type fullname="Game.UI.Feedback.FloatingTextView" preserve="all" />
+    <type fullname="Game.UI.Feedback.ToastView" preserve="all" />
+    <type fullname="Game.UI.Garden.FloorRowView" preserve="all" />
+    <type fullname="Game.UI.Garden.GardenScreen" preserve="all" />
+    <type fullname="Game.UI.Garden.HudView" preserve="all" />
+    <type fullname="Game.UI.Garden.PotCellView" preserve="all" />
+    <type fullname="Game.UI.Garden.SeedOptionView" preserve="all" />
+    <type fullname="Game.UI.Garden.SeedPickerPopup" preserve="all" />
+    <type fullname="Game.UI.Inventory.InventoryPopup" preserve="all" />
+    <type fullname="Game.UI.Inventory.InventoryRowView" preserve="all" />
+    <type fullname="Game.UI.Layout.OrientationGrid" preserve="all" />
+    <type fullname="Game.UI.Layout.OrientationLayout" preserve="all" />
+    <type fullname="Game.UI.Layout.SafeAreaFrame" preserve="all" />
+    <type fullname="Game.UI.Machines.MachineJobView" preserve="all" />
+    <type fullname="Game.UI.Machines.MachinePopup" preserve="all" />
+    <type fullname="Game.UI.Machines.MachineTabView" preserve="all" />
+    <type fullname="Game.UI.Machines.MachineTileView" preserve="all" />
+    <type fullname="Game.UI.Machines.RecipeRowView" preserve="all" />
+    <type fullname="Game.UI.Machines.WorkshopRowView" preserve="all" />
+    <type fullname="Game.UI.Orders.BalloonPopup" preserve="all" />
+    <type fullname="Game.UI.Orders.BalloonSlotView" preserve="all" />
+    <type fullname="Game.UI.Orders.OrderCardView" preserve="all" />
+    <type fullname="Game.UI.Orders.OrdersPopup" preserve="all" />
+    <type fullname="Game.UI.Popups.ComingSoonPopup" preserve="all" />
+    <type fullname="Game.UI.Popups.LevelUpPopup" preserve="all" />
+    <type fullname="Game.UI.Pots.PotItemRowView" preserve="all" />
+    <type fullname="Game.UI.Pots.PotPickerPopup" preserve="all" />
+    <type fullname="Game.UI.Shop.ShopItemRowView" preserve="all" />
+    <type fullname="Game.UI.Shop.ShopPopup" preserve="all" />
+    <type fullname="Game.UI.UiTheme" preserve="all" />
+    <type fullname="Game.UI.Widgets.NavButtonView" preserve="all" />
+    <type fullname="Game.UI.Widgets.ProgressBarView" preserve="all" />
+    <type fullname="Game.UI.Widgets.VerticalGradient" preserve="all" />
+    <type fullname="Game.UI.Layout.OrientationGrid/GridSpec" preserve="nothing" serialized="true" />
+    <type fullname="Game.UI.Layout.RectLayout" preserve="nothing" serialized="true" />
+    <type fullname="Game.UI.UiPaletteColor" preserve="nothing" serialized="true" />
+    <type fullname="Game.UI.UiThemeSprite" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Percas.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Percas.Core.UI.Selectable.BaseButton" preserve="all" />
+    <type fullname="Percas.Core.UI.Selectable.SelectableFeel" preserve="all" />
+    <type fullname="Percas.Core.UI.Selectable.SelectableFeelConfig" preserve="all" />
+    <type fullname="Percas.Core.UI.Transition.FadeTransition" preserve="all" />
+    <type fullname="Percas.Core.UI.Transition.ScaleTransition" preserve="all" />
+    <type fullname="Percas.Core.UI.Selectable.SelectableFeelConfig/Effect" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
+    <type fullname="UnityEngine.UI.Outline" preserve="all" />
+    <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Shadow" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+</linker>

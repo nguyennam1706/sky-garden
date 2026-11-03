@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#7EC3F0">
+    <title>Farm</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container">
+      <canvas id="unity-canvas" tabindex="-1"></canvas>
+      <div id="loading">
+        <div id="loading-title">Sky Garden</div>
+        <div id="progress-track"><div id="progress-fill"></div></div>
+        <div id="loading-text">Đang tải...</div>
+      </div>
+      <div id="banner"></div>
+    </div>
+    <script>window.SKY_GARDEN_FIREBASE_ENV = "dev";</script>
+    <script src="firebase-config.dev.js"></script>
+    <script src="TemplateData/firebase-sdk.js"></script>
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+      var loading = document.querySelector("#loading");
+      var progressFill = document.querySelector("#progress-fill");
+      var banner = document.querySelector("#banner");
+
+      function showBanner(message, type) {
+        if (type !== "error" && type !== "warning") return;
+        var line = document.createElement("div");
+        line.className = type;
+        line.textContent = message;
+        banner.appendChild(line);
+        if (type === "warning") setTimeout(function () { banner.removeChild(line); }, 5000);
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/dec2e4b031071afd966b07f10e890057.loader.js";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/e53bb4a246f946a372f89f50cfa7a6cb.data.unityweb",
+        frameworkUrl: buildUrl + "/fa7f530146e819cd40e3085434f95154.framework.js.unityweb",
+        codeUrl: buildUrl + "/d16e719ac40f5548fdc218107c3de7e1.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Farm",
+        productVersion: "1.0",
+        showBanner: showBanner,
+        // Art bible: cap the backing resolution at 2x to keep fill rate sane on high-DPI phones.
+        devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
+      };
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = function () {
+        createUnityInstance(canvas, config, function (progress) {
+          progressFill.style.width = (100 * progress) + "%";
+        }).then(function () {
+          loading.style.display = "none";
+        }).catch(function (message) {
+          showBanner(String(message), "error");
+        });
+      };
+      script.onerror = function () {
+        showBanner("Không tải được " + loaderUrl, "error");
+      };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
